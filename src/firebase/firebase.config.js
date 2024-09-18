@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyB2xwoqgkebpP5WQ5ITaXHIhp7ZMehIgWk",
-  authDomain: "drangon-news-auth.firebaseapp.com",
-  projectId: "drangon-news-auth",
-  storageBucket: "drangon-news-auth.appspot.com",
-  messagingSenderId: "695413003075",
-  appId: "1:695413003075:web:e6a66ada7d53d64258d5f6",
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID,
 };
 
 // Initialize Firebase
